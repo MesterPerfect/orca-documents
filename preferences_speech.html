@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Speech Preferences</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="highlight.pack.js"></script><script>
+document.addEventListener('DOMContentLoaded', function() {
+  var matches = document.querySelectorAll('code.syntax')
+  for (var i = 0; i < matches.length; i++) {
+    hljs.highlightBlock(matches[i]);
+  }
+}, false);</script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><main><div class="page">
+<header><div class="inner pagewide"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Orca Screen Reader"><span class="app">Orca</span> Screen Reader</a> › <a class="trail" href="index.html#quick_reference" title="Quick Reference">Quick Reference</a> » <a class="trail" href="preferences.html" title="Orca's Preferences Dialogs">Preferences</a> › <a class="trail" href="preferences.html#orca" title="Orca Preferences">Orca Preferences</a> » </div></div></div></header><article><nav class="prevnext pagewide"><div class="inner">
+<a href="preferences_voice.html" title="Voice Preferences">Previous</a><a href="preferences_braille.html" title="Braille Preferences">Next</a>
+</div></nav><div class="hgroup pagewide"><h1 class="title"><span class="title">Speech Preferences</span></h1></div>
+<div class="region">
+<div class="contents pagewide"></div>
+<section id="enable_speech"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Enable speech</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      The <span class="gui">Enable speech</span> check box controls whether or not
+      <span class="app">Orca</span> will make use of a speech synthesizer.
+      Braille-only users will likely want to uncheck this checkbox.
+    </p>
+<p class="p">
+      Default value: checked
+    </p>
+</div></div>
+</div></section><section id="verbosity"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Verbosity</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      The <span class="gui">Verbosity</span> setting determines the amount of information
+      that will be spoken in various situations. For example, if it is set
+      to verbose, and you arrow into a word that is misspelled, <span class="app">Orca</span>
+      will announce that the word is misspelled. When the level is set to brief,
+      this announcement will not be made.
+    </p>
+<p class="p">
+      Default value: <span class="gui">Verbose</span>
+    </p>
+</div></div>
+</div></section><section id="punctuation_level"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Punctuation Level</span></h2></div>
+<div class="region">
+<div class="contents pagewide">
+<p class="p">
+      The <span class="gui">Punctuation Level</span> radio button group is used to
+      adjust the amount of punctuation spoken by the synthesizer. The
+      available levels are <span class="gui">None</span>, <span class="gui">Some</span>, <span class="gui">Most</span>,
+      and <span class="gui">All</span>.
+    </p>
+<p class="p">
+      Default value: <span class="gui">Most</span>
+    </p>
+</div>
+<section id="punctuation_level_none"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">None</span></h3></div>
+<div class="region"><div class="contents pagewide"><p class="p">
+        Choosing a punctuation level of <span class="gui">None</span> would, as you expect,
+        cause no punctuation to be spoken. Note, however, that special symbols
+        such as subscripted and superscripted numbers, Unicode fractions, and
+        bullets are still spoken at this level, even though some might consider
+        these types of symbols punctuation.
+      </p></div></div>
+</div></section><section id="punctuation_level_some"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Some</span></h3></div>
+<div class="region"><div class="contents pagewide"><p class="p">
+        Choosing a punctuation level of <span class="gui">Some</span> causes all of the
+        previously-mentioned symbols to be spoken. In addition, <span class="app">Orca</span>
+        will speak known mathematical symbols, currency symbols, and "^", "@",
+        "/", "&amp;", "#".
+      </p></div></div>
+</div></section><section id="punctuation_level_most"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Most</span></h3></div>
+<div class="region"><div class="contents pagewide"><p class="p">
+        Choosing a punctuation level of <span class="gui">Most</span> causes all of the
+        previous-mentioned symbols to be spoken. In addition, <span class="app">Orca</span>
+        will speak all other known punctuation symbols <span class="em">other than</span> "!",
+        "'", ",", ".", "?".
+      </p></div></div>
+</div></section><section id="punctuation_level_all"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">All</span></h3></div>
+<div class="region"><div class="contents pagewide"><p class="p">
+        Choosing a punctuation level of <span class="gui">All</span>, as expected, causes
+        <span class="app">Orca</span> to speak all known punctuation symbols.
+      </p></div></div>
+</div></section>
+</div>
+</div></section><section id="spoken_context"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Spoken Context</span></h2></div>
+<div class="region">
+<div class="contents pagewide"><p class="p">
+      The following items control the presentation of a variety of
+      supplemental, "system" information about the item with focus.
+      Because the associated text does not appear on screen, this
+      information is presented in <span class="app">Orca</span>'s System voice.
+    </p></div>
+<section id="only_speak_displayed_text"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Only speak displayed text</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        Checking this checkbox causes <span class="app">Orca</span> to only speak actual
+        text displayed on screen. This option is intended primarily for low
+        vision users and users with a visual learning disability.
+      </p>
+<p class="p">
+        Default value: not checked
+      </p>
+<div class="note" title="Note">
+<svg height="24" width="24" version="1.1">
+ <g>
+  <path class="yelp-svg-fill" d="m4 3h16c0.554 0 1 0.446 1 1v11h-6v6h-11c-0.554 0-1-0.446-1-1v-16c0-0.554 0.446-1 1-1z"></path>
+  <path class="yelp-svg-fill" d="m17 16h4l-5 5v-4c0-0.554 0.446-1 1-1z"></path>
+ </g>
+</svg><div class="inner"><div class="region"><div class="contents"><p class="p">
+          The following items will not be available for configuration if
+          the <span class="gui">Only speak displayed text</span> checkbox is checked.
+        </p></div></div></div>
+</div>
+</div></div>
+</div></section><section id="speak_blank_lines"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Speak blank lines</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If the <span class="gui">Speak blank lines</span> checkbox is checked,
+        <span class="app">Orca</span> will say "blank" each time you arrow to a blank
+        line. If it is unchecked, <span class="app">Orca</span> will say nothing when
+        you move to a blank line.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="indentation_and_justification"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Speak indentation and justification</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        When working with code or editing other documents it is often
+        desirable to be aware of justification and indentation. Checking
+        the <span class="gui">Speak indentation and justification</span> checkbox will
+        cause <span class="app">Orca</span> to announce this information.
+      </p>
+<p class="p">
+        Default value: not checked
+      </p>
+</div></div>
+</div></section><section id="speak_misspelled_word_indicator"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Speak misspelled-word indicator</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        The misspelled-word indicator is the red squiggly line that appears
+        underneath misspelled words in editable text fields. If <span class="gui">Speak
+        misspelled-word indicator</span> is checked, when you navigate into
+        a word with this indicator, or type a word incorrectly causing this
+        indicator to appear, <span class="app">Orca</span> will speak "misspelled."
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="mnemonics"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Speak object mnemonics</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If the <span class="gui">Speak object mnemonics</span> checkbox is checked,
+        <span class="app">Orca</span> will announce the mnemonic associated with the
+        object with focus (such as <span class="keyseq"><span class="key"><kbd>Alt</kbd></span>+<span class="key"><kbd>O</kbd></span></span> for an <span class="gui">OK</span> button).
+      </p>
+<p class="p">
+        Default value: not checked
+      </p>
+</div></div>
+</div></section><section id="child_position"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Speak child position</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        Checking the <span class="gui">Speak child position</span> checkbox will cause
+        <span class="app">Orca</span> to announce the position of the focused item in
+        menus, lists, and trees (e.g. "9 of 16").
+      </p>
+<p class="p">
+        Default value: not checked
+      </p>
+</div></div>
+</div></section><section id="speak_tutorial_messages"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Speak tutorial messages</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If the <span class="gui">Speak tutorial messages</span> checkbox is checked, as
+        you move amongst objects in an interface, <span class="app">Orca</span> will
+        provide additional information, such as how to interact with the
+        currently-focused object.
+      </p>
+<p class="p">
+        Default value: not checked
+      </p>
+</div></div>
+</div></section><section id="speak_description"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Speak description</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If the <span class="gui">Speak description</span> checkbox is checked, as
+        you move amongst objects in an interface, <span class="app">Orca</span> will
+        speak the accessible description in addition to the accessible
+        name of the object.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="system_messages_are_detailed"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">System messages are detailed</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If <span class="gui">System messages are detailed</span> is checked, <span class="app">Orca</span> will
+        present detailed messages to you in speech. For instance, if you use
+        <span class="app">Orca</span>'s command to change echo, <span class="app">Orca</span> might
+        speak "Echo set to word." If you would prefer shorter messages,
+        such as simply "word," you should uncheck this checkbox.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="speak_colors_as_names"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Speak colors as names</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If <span class="gui">Speak colors as names</span> is checked, <span class="app">Orca</span> will
+        describe colors, looking for the closest approximate. For instance,
+        RGB 0, 27, 51 would be spoken as "midnight blue." If you would prefer
+        to hear the exact RGB value, you should uncheck this checkbox.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="announce_blockquotes_during_navigation"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Announce blockquotes during navigation</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If <span class="gui">Announce blockquotes during navigation</span> is checked,
+        <span class="app">Orca</span> will tell you when you navigate into or out of a
+        blockquote. Note that this setting is independent of whether or not
+        this announcement is made during Say All. See
+        <span class="link"><a href="preferences_general.html#say_all_announce_context" title="Announce Contextual Information in Say All">Announce
+        Contextual Information in Say All</a></span> for more information.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="announce_forms_during_navigation"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Announce forms during navigation</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If <span class="gui">Announce forms during navigation</span> is checked,
+        <span class="app">Orca</span> will tell you when you navigate into or out of a
+        form. Note that this setting is specific to forms which are not
+        ARIA landmarks. You can configure the presentation of ARIA landmarks
+        through the <span class="gui">Announce landmarks during navigation</span> checkbox.
+        In addition, note that this setting is independent of whether or not
+        this announcement is made during Say All. See
+        <span class="link"><a href="preferences_general.html#say_all_announce_context" title="Announce Contextual Information in Say All">Announce
+        Contextual Information in Say All</a></span> for more information.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="announce_landmarks_during_navigation"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Announce landmarks during navigation</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If <span class="gui">Announce landmarks during navigation</span> is checked,
+        <span class="app">Orca</span> will tell you when you navigate into or out of an
+        ARIA landmark. Note that this setting is independent of whether or not
+        this announcement is made during Say All. See
+        <span class="link"><a href="preferences_general.html#say_all_announce_context" title="Announce Contextual Information in Say All">Announce
+        Contextual Information in Say All</a></span> for more information.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="announce_lists_during_navigation"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Announce lists during navigation</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If <span class="gui">Announce lists during navigation</span> is checked,
+        <span class="app">Orca</span> will tell you when you navigate into or out of a
+        list. Note that this setting is independent of whether or not
+        this announcement is made during Say All. See
+        <span class="link"><a href="preferences_general.html#say_all_announce_context" title="Announce Contextual Information in Say All">Announce
+        Contextual Information in Say All</a></span> for more information.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="announce_panels_during_navigation"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Announce panels during navigation</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If <span class="gui">Announce panels during navigation</span> is checked,
+        <span class="app">Orca</span> will tell you when you navigate into or out of a
+        panel. Note that this setting is independent of whether or not
+        this announcement is made during Say All. See
+        <span class="link"><a href="preferences_general.html#say_all_announce_context" title="Announce Contextual Information in Say All">Announce
+        Contextual Information in Say All</a></span> for more information.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="announce_tables_during_navigation"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Announce tables during navigation</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If <span class="gui">Announce tables during navigation</span> is checked,
+        <span class="app">Orca</span> will tell you when you navigate into or out of a
+        table. Note that this setting is independent of whether or not
+        this announcement is made during Say All. See
+        <span class="link"><a href="preferences_general.html#say_all_announce_context" title="Announce Contextual Information in Say All">Announce
+        Contextual Information in Say All</a></span> for more information.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="speak_full_row_in_gui_tables"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Speak full row in GUI tables</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If <span class="gui">Speak full row in GUI tables</span> is checked, as you arrow up
+        and down in application tables such as the list of messages in your
+        Inbox, <span class="app">Orca</span> will speak the entire row. If you would prefer
+        to hear only the cell with focus, you should uncheck this checkbox.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="speak_full_row_in_document_tables"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Speak full row in document tables</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If <span class="gui">Speak full row in document tables</span> is checked, as you arrow
+        up and down in tables such as those found in <span class="app">Writer</span> and web
+        documents, <span class="app">Orca</span> will speak the entire row. If you would prefer
+        to hear only the cell with focus, you should uncheck this checkbox.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="speak_full_row_in_spreadsheets"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Speak full row in spreadsheets</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If <span class="gui">Speak full row in spreadsheets</span> is checked, as you arrow
+        up and down in spreadsheets, <span class="app">Orca</span> will speak the entire
+        row. If you would prefer to hear only the cell with focus, you should
+        uncheck this checkbox.
+      </p>
+<p class="p">
+        Default value: not checked
+      </p>
+</div></div>
+</div></section>
+</div>
+</div></section><nav class="prevnext pagewide"><div class="inner">
+<a href="preferences_voice.html" title="Voice Preferences">Previous</a><a href="preferences_braille.html" title="Braille Preferences">Next</a>
+</div></nav><section class="links" role="navigation"><div class="inner">
+<div class="hgroup pagewide"></div>
+<div class="contents pagewide">
+<div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="preferences.html#orca" title="Orca Preferences">Orca Preferences</a></li></ul></div>
+</div></div>
+<div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">See Also</span></h2></div>
+<div class="region"><ul><li class="links ">
+<a href="commands_speech_settings.html" title="Speech Settings Commands">Speech</a><span class="desc"> — 
+      Commands for customizing <span class="app">Orca</span>'s output
+    </span>
+</li></ul></div>
+</div></div>
+</div>
+</div></section>
+</div>
+<div class="clear"></div></article><footer><div class="inner pagewide"><div class="about ui-expander" role="contentinfo">
+<div class="yelp-data yelp-data-ui-expander" data-yelp-expanded="false"></div>
+<div class="inner">
+<div class="hgroup"><h2><span class="title">About</span></h2></div>
+<div class="region"><div class="contents">
+<div class="credits">
+<div class="credits-authors">
+<div class="title"><span class="title">Written By</span></div>
+<ul class="credits"><li>Joanmarie Diggs</li></ul>
+</div>
+<div class="credits-blank"></div>
+<div class="credits-blank"></div>
+</div>
+<div class="license">
+<div class="title"><span class="title">License</span></div>
+<div class="contents"><p class="p">Creative Commons Share Alike 3.0</p></div>
+</div>
+</div></div>
+</div>
+</div></div></footer>
+</div></main></body>
+</html>

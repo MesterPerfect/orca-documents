@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Text Attributes Preferences</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="highlight.pack.js"></script><script>
+document.addEventListener('DOMContentLoaded', function() {
+  var matches = document.querySelectorAll('code.syntax')
+  for (var i = 0; i < matches.length; i++) {
+    hljs.highlightBlock(matches[i]);
+  }
+}, false);</script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><main><div class="page">
+<header><div class="inner pagewide"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Orca Screen Reader"><span class="app">Orca</span> Screen Reader</a> › <a class="trail" href="index.html#quick_reference" title="Quick Reference">Quick Reference</a> » <a class="trail" href="preferences.html" title="Orca's Preferences Dialogs">Preferences</a> › <a class="trail" href="preferences.html#orca" title="Orca Preferences">Orca Preferences</a> » </div></div></div></header><article><nav class="prevnext pagewide"><div class="inner">
+<a href="preferences_pronunciation.html" title="Pronunciation Preferences">Previous</a><a href="preferences_web.html" title="Web Navigation Preferences">Next</a>
+</div></nav><div class="hgroup pagewide"><h1 class="title"><span class="title">Text Attributes Preferences</span></h1></div>
+<div class="region">
+<div class="contents pagewide"><p class="p">
+    The term "text attributes" refers to all of the font, style, alignment,
+    and other formatting associated with a given character or series of
+    characters. <span class="app">Orca</span>'s <span class="gui">Text Attributes</span> page allows you
+    to customize which text attributes <span class="app">Orca</span> will present in speech,
+    along with the order in which they should be presented, and which ones
+    <span class="app">Orca</span> will indicate in braille.
+  </p></div>
+<section id="table"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">The text attributes table</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      The text attributes table is where you specify what attributes will
+      and will not be presented and under what conditions. Each row consists
+      of four columns.
+    </p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p">
+          <span class="gui">Attribute Name</span>: The name of the text attribute.
+        </p></li>
+<li class="list"><p class="p">
+          <span class="gui">Speak</span>: Check this checkbox if you would like
+          <span class="app">Orca</span> to speak this attribute when you press
+          <span class="keyseq"><span class="key"><kbd>Orca Modifier</kbd></span>+<span class="key"><kbd>F</kbd></span></span>.
+        </p></li>
+<li class="list"><p class="p">
+          <span class="gui">Mark in braille</span>: Check this checkbox if you would
+          like <span class="app">Orca</span> to "underline" this attribute on your
+          braille display.
+        </p></li>
+<li class="list">
+<p class="p">
+          <span class="gui">Present Unless</span>: This editable field allows you to
+          specify when an enabled attribute is not of interest.
+        </p>
+<p class="p">
+          For example, by default the "underline" text attribute has a
+          value of "none". This causes <span class="app">Orca</span> to inform you
+          about underlined text as long as the text is actually underlined.
+          If you always want this attribute to be spoken irrespective of
+          whether or not the text is underlined, the <span class="gui">Present unless</span>
+          column should be empty for underline. In addition, you should be sure
+          that the <span class="gui">Speak</span> column for underline is checked.
+        </p>
+</li>
+</ul></div></div></div>
+</div></div>
+</div></section><section id="reset"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Undoing changes</span></h2></div>
+<div class="region"><div class="contents pagewide"><p class="p">
+       Beneath the list of text attributes, there is a <span class="gui">Reset</span> button
+       (<span class="keyseq"><span class="key"><kbd>Alt</kbd></span>+<span class="key"><kbd>R</kbd></span></span>) which will restore
+       the values of the table to what they were when the dialog was
+       first displayed.
+    </p></div></div>
+</div></section><section id="rearranging"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Rearranging the order of presentation</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        When you initially display the <span class="gui">Text Attributes</span> page, all of your enabled
+        attributes are placed at the top of the table in the order in which they
+        will be spoken. There are four buttons which can be used to rearrange
+        the order of presentation.
+    </p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p">
+          <span class="gui">Move to top</span> (<span class="keyseq"><span class="key"><kbd>Alt</kbd></span>+<span class="key"><kbd>T</kbd></span></span>):
+          moves the selected attribute to the top of the list.
+        </p></li>
+<li class="list"><p class="p">
+          <span class="gui">Move up</span> (<span class="keyseq"><span class="key"><kbd>Alt</kbd></span>+<span class="key"><kbd>U</kbd></span></span>):
+          moves the selected attribute up one row.
+        </p></li>
+<li class="list"><p class="p">
+          <span class="gui">Move down</span> (<span class="keyseq"><span class="key"><kbd>Alt</kbd></span>+<span class="key"><kbd>D</kbd></span></span>):
+          moves the selected attribute down one row.
+        </p></li>
+<li class="list"><p class="p">
+          <span class="gui">Move to bottom</span> (<span class="keyseq"><span class="key"><kbd>Alt</kbd></span>+<span class="key"><kbd>B</kbd></span></span>):
+          moves the selected attribute to the bottom of the list.
+        </p></li>
+</ul></div></div></div>
+</div></div>
+</div></section><section id="braille_indicator"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Options for Configuring Braille "Underlining" for Formatting</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        Beneath the push buttons is the <span class="gui">Braille Indicator</span> group
+        of radio buttons. Here you can select the cell or cells to be used
+        to indicate text which has at least one of the specified attributes.
+    </p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p"><span class="gui">None</span>: Do not underline text attributes in braille (the default)</p></li>
+<li class="list"><p class="p"><span class="gui">Dot 7</span>: Underline text attributes with only Dot 7</p></li>
+<li class="list"><p class="p"><span class="gui">Dot 8</span>: Underline text attributes with only Dot 8</p></li>
+<li class="list"><p class="p"><span class="gui">Dots 7 and 8</span>: Underline text attributes with both Dots 7 and Dots 8</p></li>
+</ul></div></div></div>
+</div></div>
+</div></section><nav class="prevnext pagewide"><div class="inner">
+<a href="preferences_pronunciation.html" title="Pronunciation Preferences">Previous</a><a href="preferences_web.html" title="Web Navigation Preferences">Next</a>
+</div></nav><section class="links" role="navigation"><div class="inner">
+<div class="hgroup pagewide"></div>
+<div class="contents pagewide">
+<div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="preferences.html#orca" title="Orca Preferences">Orca Preferences</a></li></ul></div>
+</div></div>
+<div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">See Also</span></h2></div>
+<div class="region"><ul><li class="links ">
+<a href="howto_text_attributes.html" title="Text Attributes">Text Attributes</a><span class="desc"> — 
+      Examining text formatting
+    </span>
+</li></ul></div>
+</div></div>
+</div>
+</div></section>
+</div>
+<div class="clear"></div></article><footer><div class="inner pagewide"><div class="about ui-expander" role="contentinfo">
+<div class="yelp-data yelp-data-ui-expander" data-yelp-expanded="false"></div>
+<div class="inner">
+<div class="hgroup"><h2><span class="title">About</span></h2></div>
+<div class="region"><div class="contents">
+<div class="credits">
+<div class="credits-authors">
+<div class="title"><span class="title">Written By</span></div>
+<ul class="credits"><li>Joanmarie Diggs</li></ul>
+</div>
+<div class="credits-blank"></div>
+<div class="credits-blank"></div>
+</div>
+<div class="license">
+<div class="title"><span class="title">License</span></div>
+<div class="contents"><p class="p">Creative Commons Share Alike 3.0</p></div>
+</div>
+</div></div>
+</div>
+</div></div></footer>
+</div></main></body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Structural Navigation</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="highlight.pack.js"></script><script>
+document.addEventListener('DOMContentLoaded', function() {
+  var matches = document.querySelectorAll('code.syntax')
+  for (var i = 0; i < matches.length; i++) {
+    hljs.highlightBlock(matches[i]);
+  }
+}, false);</script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><main><div class="page">
+<header><div class="inner pagewide"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Orca Screen Reader"><span class="app">Orca</span> Screen Reader</a> › <a class="trail" href="index.html#reading" title="Reading Documents and Web Pages">Reading Documents and Web Pages</a> » </div></div></div></header><article><nav class="prevnext pagewide"><div class="inner">
+<a href="howto_text_attributes.html" title="Text Attributes">Previous</a><a href="howto_tables.html" title="Tables">Next</a>
+</div></nav><div class="hgroup pagewide"><h1 class="title"><span class="title">Structural Navigation</span></h1></div>
+<div class="region">
+<div class="contents pagewide">
+<p class="p">
+    <span class="app">Orca</span>'s Structural Navigation feature allows you to navigate
+    amongst elements in a document. The types of elements by which you can
+    navigate include:
+  </p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p">Headings and other text blocks</p></li>
+<li class="list"><p class="p">Form controls</p></li>
+<li class="list"><p class="p">Links</p></li>
+<li class="list"><p class="p">Lists and list items</p></li>
+<li class="list"><p class="p">Landmarks, separators, and anchors</p></li>
+<li class="list"><p class="p">Tables and table cells</p></li>
+</ul></div></div></div>
+<p class="p">
+    A full list of individual elements and their associated keybindings can
+    be found in <span class="link"><a href="commands_structural_navigation.html" title="Structural Navigation Commands">Structural
+    Navigation Commands</a></span>.
+  </p>
+</div>
+<section id="applications"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Supported Applications</span></h2></div>
+<div class="region">
+<div class="contents pagewide">
+<p class="p">
+        Currently, Structural Navigation is fully implemented for web content,
+        including the help content you are reading now. <span class="app">Orca</span>'s
+        Structural Navigation support for table cells has also been implemented
+        for <span class="app">OpenOffice Writer</span> and <span class="app">LibreOffice Writer</span>.
+        Implementing the remainder of the Structural Navigation objects to
+        these office suites requires changes to be made by their respective
+        developers. Implementing any Structural Navigation features within
+        <span class="app">Evince</span> will require a similar effort on the part of its
+        developers.
+      </p>
+<div class="note note-tip" title="Tip">
+<svg height="24" width="24" version="1.1">
+ <g>
+  <path class="yelp-svg-fill" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;text-decoration-style:solid;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none" d="m12 2c-3.8541 0-7 3.1459-7 7 0 1.823 0.4945 3.139 1.1641 4.133 0.6695 0.994 1.4328 1.671 2.039 2.471 0.0882 0.116 0.1749 0.656 0.2071 1.32 0.016 0.332 0.0133 0.68 0.1894 1.119 0.0881 0.22 0.2439 0.478 0.5059 0.672 0.2619 0.194 0.6028 0.285 0.8945 0.285h4c0.583 0 1.204-0.478 1.402-0.908 0.199-0.43 0.217-0.793 0.244-1.137 0.056-0.688 0.138-1.319 0.211-1.441 0.549-0.916 1.304-2.009 1.94-3.114 0.636-1.104 1.203-2.199 1.203-3.4 0-3.8541-3.146-7-7-7zm0 2c2.773 0 5 2.2267 5 5 0 0.456-0.359 1.401-0.936 2.402-0.111 0.195-0.246 0.399-0.369 0.598h-7.8825c-0.4871-0.728-0.8125-1.519-0.8125-3 0-2.7733 2.2267-5 5-5z"></path>
+  <path class="yelp-svg-fill" d="m9 20a0.5 0.5 0 0 0 -0.5 0.5 0.5 0.5 0 0 0 0.5 0.5h6a0.5 0.5 0 0 0 0.5 -0.5 0.5 0.5 0 0 0 -0.5 -0.5h-6zm0 2a0.5 0.5 0 0 0 -0.5 0.5 0.5 0.5 0 0 0 0.5 0.5h6a0.5 0.5 0 0 0 0.5 -0.5 0.5 0.5 0 0 0 -0.5 -0.5h-6z"></path>
+ </g>
+</svg><div class="inner">
+<div class="title title-note"><h3><span class="title">Don't Forget To Toggle Structural Navigation On!</span></h3></div>
+<div class="region"><div class="contents"><p class="p">
+          Depending on where you are, it may be necessary for you to explicitly
+          toggle Structural Navigation on before you can use it.
+        </p></div></div>
+</div>
+</div>
+</div>
+<section id="toggling_required"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">When Toggling Structural Navigation On Is Required</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+          In web pages, explicitly toggling Structural Navigation on is
+          generally unnecessary because your interaction with the document
+          largely consists of reading its content. Thus there is no question
+          as to whether the 'H' you just pressed was meant to be a writing
+          command or a navigation command.
+        </p>
+<p class="p">
+          On the other hand, in editable documents such as those found in
+          <span class="app">OpenOffice</span> and <span class="app">LibreOffice</span>, it is far more
+          difficult for <span class="app">Orca</span> to accurately predict what you expect
+          to have happen as a result of pressing 'H'. Therefore, before you
+          can use any Structural Navigation command in an editable document,
+          you must first toggle Structural Navigation on by pressing
+          <span class="keyseq"><span class="key"><kbd>Orca Modifier</kbd></span>+<span class="key"><kbd>Z</kbd></span></span>.
+          When you are finished navigating and ready to resume writing, press
+          <span class="keyseq"><span class="key"><kbd>Orca Modifier</kbd></span>+<span class="key"><kbd>Z</kbd></span></span> again to toggle
+          Structural Navigation off.
+        </p>
+</div></div>
+</div></section>
+</div>
+</div></section><section id="settings"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Available Settings</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      In addition to the aforementioned commands, <span class="app">Orca</span> has a number
+      of configurable options available specifically for applications in which
+      there is structural navigation support.
+    </p>
+<div class="steps"><div class="inner">
+<div class="title title-steps"><h3><span class="title">Configuring Structural Navigation</span></h3></div>
+<div class="region"><ol class="steps">
+<li class="steps"><p class="p">
+          Give focus to an application for which <span class="app">Orca</span> has
+          Structural Navigation support.
+        </p></li>
+<li class="steps"><p class="p">
+          Get into the <span class="link"><a href="preferences.html" title="Orca's Preferences Dialogs">Orca Preferences</a></span>
+          dialog box for the current application by pressing
+          <span class="keyseq"><span class="key"><kbd>Ctrl</kbd></span>+<span class="key"><kbd>Orca Modifier</kbd></span>+<span class="key"><kbd>Space</kbd></span></span>.
+        </p></li>
+<li class="steps"><p class="p">
+          Navigate to the last page of the dialog box which should be
+          named according to the name of your current application.
+        </p></li>
+<li class="steps"><p class="p">
+         Examine and change the settings as you see fit.
+        </p></li>
+<li class="steps"><p class="p">
+          Press the <span class="gui">OK</span> button.
+        </p></li>
+</ol></div>
+</div></div>
+</div></div>
+</div></section><nav class="prevnext pagewide"><div class="inner">
+<a href="howto_text_attributes.html" title="Text Attributes">Previous</a><a href="howto_tables.html" title="Tables">Next</a>
+</div></nav><section class="links" role="navigation"><div class="inner">
+<div class="hgroup pagewide"></div>
+<div class="contents pagewide"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html#reading" title="Reading Documents and Web Pages">Reading Documents and Web Pages</a></li></ul></div>
+</div></div></div>
+</div></section>
+</div>
+<div class="clear"></div></article><footer><div class="inner pagewide"><div class="about ui-expander" role="contentinfo">
+<div class="yelp-data yelp-data-ui-expander" data-yelp-expanded="false"></div>
+<div class="inner">
+<div class="hgroup"><h2><span class="title">About</span></h2></div>
+<div class="region"><div class="contents">
+<div class="credits">
+<div class="credits-authors">
+<div class="title"><span class="title">Written By</span></div>
+<ul class="credits"><li>Joanmarie Diggs</li></ul>
+</div>
+<div class="credits-blank"></div>
+<div class="credits-blank"></div>
+</div>
+<div class="license">
+<div class="title"><span class="title">License</span></div>
+<div class="contents"><p class="p">Creative Commons Share Alike 3.0</p></div>
+</div>
+</div></div>
+</div>
+</div></div></footer>
+</div></main></body>
+</html>

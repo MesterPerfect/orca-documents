@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Braille Preferences</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="highlight.pack.js"></script><script>
+document.addEventListener('DOMContentLoaded', function() {
+  var matches = document.querySelectorAll('code.syntax')
+  for (var i = 0; i < matches.length; i++) {
+    hljs.highlightBlock(matches[i]);
+  }
+}, false);</script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><main><div class="page">
+<header><div class="inner pagewide"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Orca Screen Reader"><span class="app">Orca</span> Screen Reader</a> › <a class="trail" href="index.html#quick_reference" title="Quick Reference">Quick Reference</a> » <a class="trail" href="preferences.html" title="Orca's Preferences Dialogs">Preferences</a> › <a class="trail" href="preferences.html#orca" title="Orca Preferences">Orca Preferences</a> » </div></div></div></header><article><nav class="prevnext pagewide"><div class="inner">
+<a href="preferences_speech.html" title="Speech Preferences">Previous</a><a href="preferences_key_echo.html" title="Echo Preferences">Next</a>
+</div></nav><div class="hgroup pagewide"><h1 class="title"><span class="title">Braille Preferences</span></h1></div>
+<div class="region">
+<div class="contents pagewide"></div>
+<section id="braillesupport"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Enable Braille Support</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      This check box toggles whether or not <span class="app">Orca</span> will make
+      use of a braille display. If BrlTTY is not running, <span class="app">Orca</span>
+      will recover gracefully and will not communicate with the braille
+      display.
+    </p>
+<p class="p">
+      Default value: not checked
+    </p>
+<div class="note note-tip" title="Tip">
+<svg height="24" width="24" version="1.1">
+ <g>
+  <path class="yelp-svg-fill" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;text-decoration-style:solid;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none" d="m12 2c-3.8541 0-7 3.1459-7 7 0 1.823 0.4945 3.139 1.1641 4.133 0.6695 0.994 1.4328 1.671 2.039 2.471 0.0882 0.116 0.1749 0.656 0.2071 1.32 0.016 0.332 0.0133 0.68 0.1894 1.119 0.0881 0.22 0.2439 0.478 0.5059 0.672 0.2619 0.194 0.6028 0.285 0.8945 0.285h4c0.583 0 1.204-0.478 1.402-0.908 0.199-0.43 0.217-0.793 0.244-1.137 0.056-0.688 0.138-1.319 0.211-1.441 0.549-0.916 1.304-2.009 1.94-3.114 0.636-1.104 1.203-2.199 1.203-3.4 0-3.8541-3.146-7-7-7zm0 2c2.773 0 5 2.2267 5 5 0 0.456-0.359 1.401-0.936 2.402-0.111 0.195-0.246 0.399-0.369 0.598h-7.8825c-0.4871-0.728-0.8125-1.519-0.8125-3 0-2.7733 2.2267-5 5-5z"></path>
+  <path class="yelp-svg-fill" d="m9 20a0.5 0.5 0 0 0 -0.5 0.5 0.5 0.5 0 0 0 0.5 0.5h6a0.5 0.5 0 0 0 0.5 -0.5 0.5 0.5 0 0 0 -0.5 -0.5h-6zm0 2a0.5 0.5 0 0 0 -0.5 0.5 0.5 0.5 0 0 0 0.5 0.5h6a0.5 0.5 0 0 0 0.5 -0.5 0.5 0.5 0 0 0 -0.5 -0.5h-6z"></path>
+ </g>
+</svg><div class="inner"><div class="region"><div class="contents"><p class="p">
+        If you configure BrlTTY later on, you need to restart <span class="app">Orca</span>
+        in order to use braille.
+      </p></div></div></div>
+</div>
+</div></div>
+</div></section><section id="braillewordwrap"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Enable word wrap</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      If <span class="gui">Enable word wrap</span> is checked, <span class="app">Orca</span> will adjust the
+      text so that only full words are shown on the braille display. If it is not
+      checked, <span class="app">Orca</span> will use all of the cells on the display so that
+      more text can be shown at once.
+    </p>
+<p class="p">
+      Default value: not checked
+    </p>
+</div></div>
+</div></section><section id="contractedbraille"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Enable Contracted Braille</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      Orca supports contracted braille via the liblouis project. Because many
+      distros include liblouis, you will likely automatically have access to
+      contracted braille support in <span class="app">Orca</span>.
+    </p>
+<p class="p">
+      To enable contracted braille on a system where liblouis has been installed,
+      be sure that the <span class="gui">Enable Contracted Braille</span> checkbox is checked.
+      Then choose your desired translation table from the <span class="gui">Contraction
+      Table</span> combo box.
+    </p>
+<p class="p">
+      Default value: not checked
+    </p>
+</div></div>
+</div></section><section id="rolenames"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Abbreviated Role Names</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      This check box determines the manner in which role names are
+      displayed and can be used to help conserve real estate on the
+      braille display. For instance, if a slider had focus, the word
+      "slider" would be displayed if abbreviated role names is not
+      checked; if it were checked, "sldr" would be displayed instead.
+    </p>
+<p class="p">
+      Default value: not checked
+    </p>
+</div></div>
+</div></section><section id="eolindicator"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Disable end of line symbol</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      Checking this checkbox tells <span class="app">Orca</span> to not present the
+      "$l" string at the end of a line of text.
+    </p>
+<p class="p">
+      Default value: not checked
+    </p>
+</div></div>
+</div></section><section id="verbosity"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Verbosity</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      This radio button group determines the amount of information that
+      will be brailled in certain situations. For example, if it is set
+      to verbose, keyboard shortcut and role name information is displayed.
+      This information is not displayed in brief mode.
+    </p>
+<p class="p">
+      Default value: <span class="gui">Verbose</span>
+    </p>
+</div></div>
+</div></section><section id="selectionandhyperlink"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Selection and Hyperlink Indicators</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      The <span class="gui">Selection Indicator</span> and <span class="gui">Hyperlink Indicator</span>
+      radio button groups allow you to configure <span class="app">Orca</span>'s behavior
+      when displaying selected text and hyperlinks. By default, when you
+      encounter either, <span class="app">Orca</span> will "underline" that text on
+      your braille display with Dots 7 and 8. If you would prefer, you
+      can change the indicator to only be Dot 7, only be Dot 8, or not
+      be present at all.
+    </p>
+<p class="p">
+      Default value: <span class="gui">Dots 7 and 8</span>
+    </p>
+<div class="note note-tip" title="Tip">
+<svg height="24" width="24" version="1.1">
+ <g>
+  <path class="yelp-svg-fill" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;text-decoration-style:solid;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none" d="m12 2c-3.8541 0-7 3.1459-7 7 0 1.823 0.4945 3.139 1.1641 4.133 0.6695 0.994 1.4328 1.671 2.039 2.471 0.0882 0.116 0.1749 0.656 0.2071 1.32 0.016 0.332 0.0133 0.68 0.1894 1.119 0.0881 0.22 0.2439 0.478 0.5059 0.672 0.2619 0.194 0.6028 0.285 0.8945 0.285h4c0.583 0 1.204-0.478 1.402-0.908 0.199-0.43 0.217-0.793 0.244-1.137 0.056-0.688 0.138-1.319 0.211-1.441 0.549-0.916 1.304-2.009 1.94-3.114 0.636-1.104 1.203-2.199 1.203-3.4 0-3.8541-3.146-7-7-7zm0 2c2.773 0 5 2.2267 5 5 0 0.456-0.359 1.401-0.936 2.402-0.111 0.195-0.246 0.399-0.369 0.598h-7.8825c-0.4871-0.728-0.8125-1.519-0.8125-3 0-2.7733 2.2267-5 5-5z"></path>
+  <path class="yelp-svg-fill" d="m9 20a0.5 0.5 0 0 0 -0.5 0.5 0.5 0.5 0 0 0 0.5 0.5h6a0.5 0.5 0 0 0 0.5 -0.5 0.5 0.5 0 0 0 -0.5 -0.5h-6zm0 2a0.5 0.5 0 0 0 -0.5 0.5 0.5 0.5 0 0 0 0.5 0.5h6a0.5 0.5 0 0 0 0.5 -0.5 0.5 0.5 0 0 0 -0.5 -0.5h-6z"></path>
+ </g>
+</svg><div class="inner">
+<div class="title title-note"><h3><span class="title">Text Attribute Indicators</span></h3></div>
+<div class="region"><div class="contents"><p class="p">
+        You can also optionally have text attributes indicated in braille.
+        Enabling this feature and choosing which attributes are of
+        interest is done on the <span class="link"><a href="preferences_text_attributes.html" title="Text Attributes Preferences">
+        <span class="gui">Text Attributes</span> page</a></span> of the preferences dialog.
+      </p></div></div>
+</div>
+</div>
+</div></div>
+</div></section><section id="flashMessageSettings"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Flash Message Settings</span></h2></div>
+<div class="region">
+<div class="contents pagewide"><p class="p">
+        Flash messages are similar in nature to notifications or announcements:
+        They are shown on your refreshable braille display for a brief time,
+        after which the original contents of the braille display are restored.
+        <span class="app">Orca</span> has several settings you can use to control flash message
+        presentation.
+    </p></div>
+<section id="flashMessageSettings_enable"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Enable flash messages</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If <span class="gui">Enable flash messages</span> is checked, <span class="app">Orca</span> will
+        present messages to you in braille. If you prefer to only have
+        <span class="app">Orca</span>'s messages spoken, you should uncheck this checkbox.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="flashMessageSettings_detailed"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Messages are detailed</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If <span class="gui">Messages are detailed</span> is checked, <span class="app">Orca</span> will
+        present detailed messages to you in braille. For instance, if you
+        use <span class="app">Orca</span>'s command to change echo, <span class="app">Orca</span> might
+        display "Echo set to word." If you would prefer shorter messages,
+        such as simply "word," you should uncheck this checkbox.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="flashMessageSettings_persistent"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Messages are persistent</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        As stated above, flash messages are only shown for a brief period of time.
+        If you would prefer messages remain displayed until you perform an action
+        which causes your display to be updated, you should check the <span class="gui">Messages
+        are persistent</span> checkbox.
+      </p>
+<p class="p">
+        Default value: not checked
+      </p>
+</div></div>
+</div></section><section id="flashMessageSettings_duration"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Duration (secs)</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        The amount of time <span class="app">Orca</span> will wait before removing the message and
+        restoring the original contents of your display can be set in the <span class="gui">
+        Duration (secs)</span> spin button. Note that the value of this
+        setting will be ignored if you have enabled persistent flash messages.
+      </p>
+<p class="p">
+        Default value: 5
+      </p>
+</div></div>
+</div></section>
+</div>
+</div></section><nav class="prevnext pagewide"><div class="inner">
+<a href="preferences_speech.html" title="Speech Preferences">Previous</a><a href="preferences_key_echo.html" title="Echo Preferences">Next</a>
+</div></nav><section class="links" role="navigation"><div class="inner">
+<div class="hgroup pagewide"></div>
+<div class="contents pagewide">
+<div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="preferences.html#orca" title="Orca Preferences">Orca Preferences</a></li></ul></div>
+</div></div>
+<div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">See Also</span></h2></div>
+<div class="region"><ul><li class="links ">
+<a href="commands_braille.html" title="Braille Commands">Braille</a><span class="desc"> — 
+      Commands executable on braille displays
+    </span>
+</li></ul></div>
+</div></div>
+</div>
+</div></section>
+</div>
+<div class="clear"></div></article><footer><div class="inner pagewide"><div class="about ui-expander" role="contentinfo">
+<div class="yelp-data yelp-data-ui-expander" data-yelp-expanded="false"></div>
+<div class="inner">
+<div class="hgroup"><h2><span class="title">About</span></h2></div>
+<div class="region"><div class="contents">
+<div class="credits">
+<div class="credits-authors">
+<div class="title"><span class="title">Written By</span></div>
+<ul class="credits"><li>Joanmarie Diggs</li></ul>
+</div>
+<div class="credits-blank"></div>
+<div class="credits-blank"></div>
+</div>
+<div class="license">
+<div class="title"><span class="title">License</span></div>
+<div class="contents"><p class="p">Creative Commons Share Alike 3.0</p></div>
+</div>
+</div></div>
+</div>
+</div></div></footer>
+</div></main></body>
+</html>

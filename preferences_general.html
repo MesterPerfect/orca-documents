@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>General Preferences</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="highlight.pack.js"></script><script>
+document.addEventListener('DOMContentLoaded', function() {
+  var matches = document.querySelectorAll('code.syntax')
+  for (var i = 0; i < matches.length; i++) {
+    hljs.highlightBlock(matches[i]);
+  }
+}, false);</script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><main><div class="page">
+<header><div class="inner pagewide"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Orca Screen Reader"><span class="app">Orca</span> Screen Reader</a> › <a class="trail" href="index.html#quick_reference" title="Quick Reference">Quick Reference</a> » <a class="trail" href="preferences.html" title="Orca's Preferences Dialogs">Preferences</a> › <a class="trail" href="preferences.html#orca" title="Orca Preferences">Orca Preferences</a> » </div></div></div></header><article><nav class="prevnext pagewide"><div class="inner">
+<a href="preferences_introduction.html" title="Introduction to Orca's Preferences">Previous</a><a href="preferences_voice.html" title="Voice Preferences">Next</a>
+</div></nav><div class="hgroup pagewide"><h1 class="title"><span class="title">General Preferences</span></h1></div>
+<div class="region">
+<div class="contents pagewide"></div>
+<section id="keyboardlayout"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Keyboard Layout</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      The <span class="gui">Keyboard Layout</span> radio button group allows you to specify if
+      you will be working on a desktop (i.e. with a numeric keypad) or laptop
+      keyboard. Which layout you choose will determine both the <span class="key"><kbd>Orca
+      Modifier</kbd></span> as well as a number of keyboard shortcuts for performing
+      <span class="app">Orca</span> commands.</p>
+<p class="p">
+      Default value: <span class="gui">Desktop</span>
+    </p>
+</div></div>
+</div></section><section id="presenttooltips"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Present Tooltips</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      When checked, this option will tell <span class="app">Orca</span> to present information
+      about tooltips when they appear as the result of mouse hovering. Specific
+      actions to force tooltips to appear, such as pressing <span class="keyseq"><span class="key"><kbd>Ctrl</kbd></span>+<span class="key"><kbd>F1</kbd></span></span> when an object has focus, will
+      always result in tooltips being presented, regardless of this setting.
+    </p>
+<p class="p">
+      Default value: not checked
+    </p>
+</div></div>
+</div></section><section id="objectundermouse"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Speak Object Under Mouse</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      When checked, this option will tell <span class="app">Orca</span> to present
+      information about the object under the mouse pointer as you move
+      it around the screen using <span class="app">Orca</span>'s
+      <span class="link"><a href="howto_mouse_review.html" title="Mouse Review">Mouse Review</a></span> feature.
+    </p>
+<p class="p">
+      Default value: not checked
+    </p>
+</div></div>
+</div></section><section id="timeanddate"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Time Format and Date Format</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      The <span class="gui">Time Format</span> and <span class="gui">Date Format</span> combo boxes allow
+      you to specify how <span class="app">Orca</span> will speak and braille the time and the
+      date.
+    </p>
+<p class="p">
+      Default value: use the system locale's format for each
+    </p>
+</div></div>
+</div></section><section id="navigation_in_say_all"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Navigation in Say All</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        <span class="app">Orca</span>'s Say All feature speaks document content from your
+        present location to the end of the document. By default, pressing any
+        key will interrupt Say All's presentation. However, if you check the
+        <span class="gui">Enable rewind and fast forward in Say All</span> checkbox,
+        <span class="key"><kbd>Up</kbd></span> and <span class="key"><kbd>Down</kbd></span> can be used during Say All to quickly
+        move within the document in order to re-hear something which was just
+        read or skip past text of no interest without having to restart Say All.
+    </p>
+<p class="p">
+       If you are reading a document within an application that has structural
+       navigation support, and you have checked the <span class="gui">Enable structural navigation
+       in Say All</span> checkbox, you can use the supported structural navigation
+       commands in a similar fashion: <span class="key"><kbd>H</kbd></span>/<span class="keyseq"><span class="key"><kbd>Shift</kbd></span>+<span class="key"><kbd>H</kbd></span></span> continues reading from the next/previous heading,
+       <span class="key"><kbd>P</kbd></span>/<span class="keyseq"><span class="key"><kbd>Shift</kbd></span>+<span class="key"><kbd>P</kbd></span></span> continues reading
+       from the next/previous paragraph, <span class="key"><kbd>T</kbd></span>/<span class="keyseq"><span class="key"><kbd>Shift</kbd></span>+<span class="key"><kbd>T</kbd></span></span> continues reading from the next/previous table, and
+       so on.
+    </p>
+<p class="p">
+      Default value: not checked
+    </p>
+</div></div>
+</div></section><section id="say_all_announce_context"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Announce Contextual Information in Say All</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      <span class="app">Orca</span> can optionally provide more information about the document
+      content being spoken, such as announcing when you are entering and leaving
+      a blockquote, list, table, or other container. Whether or not these
+      announcements are made can be configured independently through the following
+      checkboxes:
+    </p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p">Announce blockquotes in Say All</p></li>
+<li class="list"><p class="p">Announce forms in Say All</p></li>
+<li class="list"><p class="p">Announce landmarks in Say All</p></li>
+<li class="list"><p class="p">Announce lists in Say All</p></li>
+<li class="list"><p class="p">Announce panels in Say All</p></li>
+<li class="list"><p class="p">Announce tables in Say All</p></li>
+</ul></div></div></div>
+<p class="p">
+      Default value: checked
+    </p>
+<div class="note" title="Note">
+<svg height="24" width="24" version="1.1">
+ <g>
+  <path class="yelp-svg-fill" d="m4 3h16c0.554 0 1 0.446 1 1v11h-6v6h-11c-0.554 0-1-0.446-1-1v-16c0-0.554 0.446-1 1-1z"></path>
+  <path class="yelp-svg-fill" d="m17 16h4l-5 5v-4c0-0.554 0.446-1 1-1z"></path>
+ </g>
+</svg><div class="inner"><div class="region"><div class="contents"><p class="p">
+        Whether or not <span class="app">Orca</span> makes these announcements during
+        navigation is also configurable. You will find similar checkboxes
+        on the <span class="gui">Speech</span> page. For more information, see
+        <span class="link"><a href="preferences_speech.html#spoken_context" title="Spoken Context">Spoken Context</a></span>.
+      </p></div></div></div>
+</div>
+</div></div>
+</div></section><section id="say_all_by"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Say All By</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      The <span class="gui">Say All By</span> combo box allows you to specify whether
+      <span class="app">Orca</span> speaks a sentence at a time or a line at a time when
+      doing a "Say All" of a document.
+    </p>
+<p class="p">
+      Default value: <span class="gui">Sentence</span>
+    </p>
+</div></div>
+</div></section><section id="profiles"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Profiles</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      The <span class="gui">Profiles</span> group of controls, which appear at the bottom
+      of the <span class="gui">General</span> page, make it possible for you to maintain
+      and use multiple configurations. 
+    </p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p">
+          The <span class="gui">Active Profile</span> combo box displays the current profile
+          and allows you to select a different profile to load.
+        </p></li>
+<li class="list"><p class="p">
+          The <span class="gui">Load</span> button will cause <span class="app">Orca</span> to load the
+          profile indicated in the <span class="gui">Active Profile</span> combo box.
+        </p></li>
+<li class="list"><p class="p">
+          The <span class="gui">Save As</span> button allows you to save the current set of
+          options from the preferences dialog box to a named profile.
+        </p></li>
+<li class="list"><p class="p">
+          The <span class="gui">Start-up Profile</span> combo box allows you to select the
+          profile which should be automatically loaded each time you launch
+          <span class="app">Orca</span>.
+        </p></li>
+</ul></div></div></div>
+</div></div>
+</div></section><section id="progress_bar_updates"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Progress Bar Updates</span></h2></div>
+<div class="region">
+<div class="contents pagewide"></div>
+<section id="progress_bar_updates_speak"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Speak updates</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If the <span class="gui">Speak updates</span> checkbox is checked <span class="app">Orca</span> will
+        periodically speak the status of progress bars.
+      </p>
+<p class="p">
+        Default value: checked
+      </p>
+</div></div>
+</div></section><section id="progress_bar_updates_braille"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Braille updates</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If the <span class="gui">Braille updates</span> checkbox is checked <span class="app">Orca</span> will
+        periodically display the status of progress bars on your refreshable braille
+        display.
+      </p>
+<p class="p">
+        Default value: not checked
+      </p>
+</div></div>
+</div></section><section id="progress_bar_updates_beep"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Beep updates</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        If the <span class="gui">Beep updates</span> checkbox is checked <span class="app">Orca</span> will
+        periodically emit beeps which increase in pitch as the value of the progress
+        bar increases.
+      </p>
+<p class="p">
+        Default value: not checked
+      </p>
+</div></div>
+</div></section><section id="progress_bar_updates_frequency"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Frequency (secs)</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        This spin button determines how often updates are presented.
+      </p>
+<p class="p">
+        Default value: 10
+      </p>
+</div></div>
+</div></section><section id="progress_bar_updates_restrict"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">Applies to</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+         This combo box allows you to control which progress bars should be
+         presented, assuming the presentation of progress bar updates has been
+         enabled. The choices are <span class="gui">All</span>, <span class="gui">Application</span>, and
+         <span class="gui">Window</span>.
+      </p>
+<p class="p">
+        Choosing <span class="gui">All</span> will result in <span class="app">Orca</span> presenting
+        updates for all progress bars, regardless of where the progress bars
+        are located.
+      </p>
+<p class="p">
+        Choosing <span class="gui">Application</span> will result in <span class="app">Orca</span>
+        presenting updates from progress bars in the active application, even
+        if they are not in the active window.
+      </p>
+<p class="p">
+         Choosing <span class="gui">Window</span> will result in <span class="app">Orca</span> only
+         presenting updates for progress bars in the active window.
+      </p>
+<p class="p">
+        Default value: <span class="gui">Application</span>
+      </p>
+</div></div>
+</div></section>
+</div>
+</div></section><nav class="prevnext pagewide"><div class="inner">
+<a href="preferences_introduction.html" title="Introduction to Orca's Preferences">Previous</a><a href="preferences_voice.html" title="Voice Preferences">Next</a>
+</div></nav><section class="links" role="navigation"><div class="inner">
+<div class="hgroup pagewide"></div>
+<div class="contents pagewide"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="preferences.html#orca" title="Orca Preferences">Orca Preferences</a></li></ul></div>
+</div></div></div>
+</div></section>
+</div>
+<div class="clear"></div></article><footer><div class="inner pagewide"><div class="about ui-expander" role="contentinfo">
+<div class="yelp-data yelp-data-ui-expander" data-yelp-expanded="false"></div>
+<div class="inner">
+<div class="hgroup"><h2><span class="title">About</span></h2></div>
+<div class="region"><div class="contents">
+<div class="credits">
+<div class="credits-authors">
+<div class="title"><span class="title">Written By</span></div>
+<ul class="credits"><li>Joanmarie Diggs</li></ul>
+</div>
+<div class="credits-blank"></div>
+<div class="credits-blank"></div>
+</div>
+<div class="license">
+<div class="title"><span class="title">License</span></div>
+<div class="contents"><p class="p">Creative Commons Share Alike 3.0</p></div>
+</div>
+</div></div>
+</div>
+</div></div></footer>
+</div></main></body>
+</html>

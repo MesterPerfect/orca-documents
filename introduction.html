@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Welcome to Orca</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="highlight.pack.js"></script><script>
+document.addEventListener('DOMContentLoaded', function() {
+  var matches = document.querySelectorAll('code.syntax')
+  for (var i = 0; i < matches.length; i++) {
+    hljs.highlightBlock(matches[i]);
+  }
+}, false);</script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><main><div class="page">
+<header><div class="inner pagewide"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Orca Screen Reader"><span class="app">Orca</span> Screen Reader</a> › <a class="trail" href="index.html#getting_started" title="Getting Started">Getting Started</a> » </div></div></div></header><article><nav class="prevnext pagewide"><div class="inner"><a href="howto_setting_up_orca.html" title="Orca Configuration">Next</a></div></nav><div class="hgroup pagewide"><h1 class="title"><span class="title">Welcome to Orca</span></h1></div>
+<div class="region">
+<div class="contents pagewide">
+<p class="p">
+    <span class="app">Orca</span> is a free, open source, flexible, and extensible
+    screen reader that provides access to the graphical desktop via
+    speech and refreshable braille.
+  </p>
+<p class="p">
+    <span class="app">Orca</span> works with applications and toolkits that support
+    the Assistive Technology Service Provider Interface (AT-SPI), which
+    is the primary assistive technology infrastructure for Linux and
+    Solaris. Applications and toolkits supporting the AT-SPI include
+    Gtk+, Qt, Java Swing, LibreOffice, Gecko, WebKitGtk, and Chrome/Chromium.
+  </p>
+</div>
+<section id="launching"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Launching <span class="app">Orca</span></span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">To launch <span class="app">Orca</span>:</p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p">
+          The method for configuring <span class="app">Orca</span> to be launched
+          automatically as your preferred screen reader will depend upon
+          which desktop environment you use.
+        </p></li>
+<li class="list"><p class="p">
+          To toggle <span class="app">Orca</span> on and off in GNOME, press
+          <span class="keyseq"><span class="key"><kbd>Super</kbd></span>+<span class="key"><kbd>Alt</kbd></span>+<span class="key"><kbd>S</kbd></span></span>.
+        </p></li>
+<li class="list"><p class="p">
+          Type <span class="cmd">orca</span>, along with any optional parameters, in a
+          terminal window or within the <span class="gui">Run</span> dialog and then press
+          <span class="key"><kbd>Return</kbd></span>.
+        </p></li>
+</ul></div></div></div>
+</div></div>
+</div></section><section id="loadtime"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Load-Time Options</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        The following options can be specified when launching <span class="app">Orca</span>
+	in a terminal window or within the <span class="gui">Run</span> dialog:
+      </p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p"><span class="cmd">-h</span>, <span class="cmd">--help</span>: Show the help message</p></li>
+<li class="list"><p class="p">
+            <span class="cmd">-v</span>, <span class="cmd">--version</span>: Show the version of
+            <span class="app">Orca</span>
+          </p></li>
+<li class="list"><p class="p">
+            <span class="cmd">-s</span>, <span class="cmd">--setup</span>: Set up user preferences
+          </p></li>
+<li class="list"><p class="p">
+            <span class="cmd">-u</span>, <span class="cmd">--user-prefs=<span class="em">dirname</span></span>:
+            Use <span class="em">dirname</span> as the alternate directory for user
+            preferences
+          </p></li>
+<li class="list">
+<p class="p">
+            <span class="cmd">-e</span>, <span class="cmd">--enable=<span class="em">option</span></span>: Force use
+            of option, where the <span class="em">option</span> can be one of the following:
+          </p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p"><span class="cmd">speech</span></p></li>
+<li class="list"><p class="p"><span class="cmd">braille</span></p></li>
+<li class="list"><p class="p"><span class="cmd">braille-monitor</span></p></li>
+</ul></div></div></div>
+</li>
+<li class="list">
+<p class="p">
+            <span class="cmd">-d</span>, <span class="cmd">--disable=<span class="em">option</span></span>: Prevent the
+            use of an option, where the <span class="em">option</span> can be one of the
+            following:
+          </p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p"><span class="cmd">speech</span></p></li>
+<li class="list"><p class="p"><span class="cmd">braille</span></p></li>
+<li class="list"><p class="p"><span class="cmd">braille-monitor</span></p></li>
+</ul></div></div></div>
+</li>
+<li class="list"><p class="p">
+              <span class="cmd">-p</span>, <span class="cmd">--profile=<span class="em">filename</span></span>:
+              Import a profile from a given <span class="app">Orca</span> profile file
+            </p></li>
+<li class="list"><p class="p">
+            <span class="cmd">-r</span>, <span class="cmd">--replace</span>: Replace a currently-running <span class="app">Orca</span>
+          </p></li>
+<li class="list"><p class="p">
+            <span class="cmd">-l</span>, <span class="cmd">--list-apps</span>: Print the known running
+            applications
+          </p></li>
+<li class="list"><p class="p">
+            <span class="cmd">--debug</span>: Send debug output to debug-YYYY-MM-DD-HH:MM:SS.out
+          </p></li>
+<li class="list"><p class="p">
+            <span class="cmd">--debug-file=<span class="em">filename</span></span>: Send debug output to
+            the specified file
+          </p></li>
+</ul></div></div></div>
+</div></div>
+</div></section><nav class="prevnext pagewide"><div class="inner"><a href="howto_setting_up_orca.html" title="Orca Configuration">Next</a></div></nav><section class="links" role="navigation"><div class="inner">
+<div class="hgroup pagewide"></div>
+<div class="contents pagewide"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html#getting_started" title="Getting Started">Getting Started</a></li></ul></div>
+</div></div></div>
+</div></section>
+</div>
+<div class="clear"></div></article><footer><div class="inner pagewide"><div class="about ui-expander" role="contentinfo">
+<div class="yelp-data yelp-data-ui-expander" data-yelp-expanded="false"></div>
+<div class="inner">
+<div class="hgroup"><h2><span class="title">About</span></h2></div>
+<div class="region"><div class="contents">
+<div class="credits">
+<div class="credits-authors">
+<div class="title"><span class="title">Written By</span></div>
+<ul class="credits"><li>Joanmarie Diggs</li></ul>
+</div>
+<div class="credits-blank"></div>
+<div class="credits-blank"></div>
+</div>
+<div class="license">
+<div class="title"><span class="title">License</span></div>
+<div class="contents"><p class="p">Creative Commons Share Alike 3.0</p></div>
+</div>
+</div></div>
+</div>
+</div></div></footer>
+</div></main></body>
+</html>
