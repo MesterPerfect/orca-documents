@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>أين أنا</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="highlight.pack.js"></script><script>
+document.addEventListener('DOMContentLoaded', function() {
+  var matches = document.querySelectorAll('code.syntax')
+  for (var i = 0; i < matches.length; i++) {
+    hljs.highlightBlock(matches[i]);
+  }
+}, false);</script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><main><div class="page">
+<header><div class="inner pagewide"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Orca Screen Reader">قارئ الشاشة <span class="app">أوركا</span></a> › <a class="trail" href="index.html#reviewing" title="Reviewing and Interacting with Screen Contents">مراجعة والتفاعل مع محتويات الشاشة</a> » </div></div></div></header><article><nav class="prevnext pagewide"><div class="inner">
+<a href="howto_live_regions.html" title="Live Regions">السابق</a><a href="howto_flat_review.html" title="Flat Review">التالي</a>
+</div></nav><div class="hgroup pagewide"><h1 class="title"><span class="title">أين أنا</span></h1></div>
+<div class="region">
+<div class="contents pagewide">
+<p class="p">
+    بالإضافة إلى الأوامر المخصصة لقراءة شريط العنوان وشريط الحالة، يوفر <span class="app">أوركا</span> أمرين لـ "أين أنا" (Where Am I) حساسين للسياق: "أين أنا الأساسي" و"أين أنا المفصل". يتم تنفيذ "أين أنا الأساسي" لجميع الكائنات. بينما يتم تنفيذ "أين أنا المفصل" فقط لتلك الكائنات التي تتوفر عنها كمية كبيرة من المعلومات قد ترغب في معرفتها، ولكن من المحتمل ألا ترغب في معرفتها طوال الوقت.
+  </p>
+<p class="p">
+    أفضل طريقة للتعرف على ما سيقدمه "أين أنا" هي تجربة <span class="link"><a href="commands_where_am_i.html" title="Where Am I Commands">أوامر أين أنا</a></span>. ومع ذلك، لإعطائك فكرة أفضل عن الطبيعة الحساسة للسياق لميزة "أين أنا" في <span class="app">أوركا</span>، ضع في اعتبارك ما يلي:
+  </p>
+<p class="p">
+    بالنسبة لمعظم عناصر الواجهة (widgets)، سيتم إخبارك على الأقل بالتسمية و/أو الاسم، ونوع أو دور العنصر، ومفتاح الاختصار (mnemonic) و/أو مفتاح التسريع (accelerator key) إذا كانا موجودين. بالإضافة إلى ذلك:
+  </p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p">
+        إذا كان العنصر عبارة عن نص، وقمت بتنفيذ "أين أنا الأساسي"، سيتم إخبارك بالسطر الحالي إذا لم يتم تحديد أي نص. ومع ذلك، إذا تم تحديد نص، فسيخبرك "أين أنا الأساسي" بالنص المحدد. سيتضمن "أين أنا المفصل" داخل النص أيضًا سمات النص.
+      </p></li>
+<li class="list"><p class="p">
+        إذا كان يمكن تحديد العنصر (checked)، كما هو الحال مع مربعات الاختيار (checkboxes) وأزرار الراديو، فسيتم تضمين حالة التحديد.
+      </p></li>
+<li class="list"><p class="p"> 
+        إذا كان العنصر عبارة عن قائمة أو كائن يشبه القائمة، مثل مربع تحرير وسرد (combo box)، أو مجموعة أزرار راديو، أو قائمة علامات تبويب الصفحة، فسيتم تضمين موضع العنصر الحالي.
+      </p></li>
+<li class="list"><p class="p">
+        إذا كان العنصر هرميًا، مثل شجرة (tree)، وكنت على عقدة قابلة للتوسيع، فسيتم إخبارك ما إذا كانت تلك العقدة موسعة أم لا. وإذا كانت موسعة، فسيتم إخبارك أيضًا بعدد الأطفال الذين تحتوي عليهم. بالإضافة إلى ذلك، سيتم توفير مستوى التداخل.
+      </p></li>
+<li class="list"><p class="p">
+        إذا كان العنصر عبارة عن شريط تقدم أو شريط تمرير (slider)، فسيتم إخبارك بالنسبة المئوية الحالية.
+      </p></li>
+<li class="list"><p class="p">
+        إذا كان العنصر عبارة عن أيقونة داخل مجموعة أيقونات، سيتضمن "أين أنا الأساسي" الكائن الذي تتواجد فيه، والعنصر الذي تقف عليه، وعدد العناصر المحددة. في "أين أنا المفصل"، سيتم إخبارك أيضًا بالعناصر المحددة.
+      </p></li>
+<li class="list"><p class="p">
+        إذا كنت على رابط، فسيتم تضمين نوع الرابط (نفس الموقع، موقع مختلف، رابط FTP، وما إلى ذلك).
+      </p></li>
+<li class="list"><p class="p">
+        إذا كنت في خلية جدول، فسيتم تضمين إحداثيات تلك الخلية ورؤوس (عناوين) الخلية.
+      </p></li>
+<li class="list"><p class="p">
+        إذا كنت في المدقق الإملائي لتطبيق يوفر فيه <span class="app">أوركا</span> دعمًا محسنًا، سيكرر "أين أنا الأساسي" الخطأ مع مراعاة <span class="link"><a href="preferences_spellcheck.html" title="Spell Check Preferences">تفضيلات التدقيق الإملائي</a></span> الخاصة بك. سيؤدي "أين أنا المفصل" إلى جعل <span class="app">أوركا</span> يقدم التفاصيل الكاملة للخطأ.
+      </p></li>
+</ul></div></div></div>
+<p class="p">
+    وهكذا دواليك. مرة أخرى، الهدف من "أين أنا" في <span class="app">أوركا</span> هو تزويدك بالتفاصيل التي من المرجح أنك مهتم بمعرفتها حول الكائن الذي تتواجد فيه حاليًا. لتجربة "أين أنا"، انظر قائمة <span class="link"><a href="commands_where_am_i.html" title="Where Am I Commands">أوامر أين أنا</a></span>.
+  </p>
+</div>
+<nav class="prevnext pagewide"><div class="inner">
+<a href="howto_live_regions.html" title="Live Regions">السابق</a><a href="howto_flat_review.html" title="Flat Review">التالي</a>
+</div></nav><section class="links" role="navigation"><div class="inner">
+<div class="hgroup pagewide"></div>
+<div class="contents pagewide">
+<div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">مزيد من المعلومات</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html#reviewing" title="Reviewing and Interacting with Screen Contents">مراجعة والتفاعل مع محتويات الشاشة</a></li></ul></div>
+</div></div>
+<div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">انظر أيضًا</span></h2></div>
+<div class="region"><ul>
+<li class="links ">
+<a href="commands_reading.html" title="Reading Commands">القراءة</a><span class="desc"> — 
+      أوامر للوصول إلى محتوى المستند
+    </span>
+</li>
+<li class="links ">
+<a href="commands_where_am_i.html" title="Where Am I Commands">أين أنا</a><span class="desc"> — 
+      أوامر لمعرفة معلومات عن موقعك
+    </span>
+</li>
+</ul></div>
+</div></div>
+</div>
+</div></section>
+</div>
+<div class="clear"></div></article><footer><div class="inner pagewide"><div class="about ui-expander" role="contentinfo">
+<div class="yelp-data yelp-data-ui-expander" data-yelp-expanded="false"></div>
+<div class="inner">
+<div class="hgroup"><h2><span class="title">حول</span></h2></div>
+<div class="region"><div class="contents">
+<div class="credits">
+<div class="credits-authors">
+<div class="title"><span class="title">كتب بواسطة</span></div>
+<ul class="credits"><li>Joanmarie Diggs</li></ul>
+</div>
+<div class="credits-blank"></div>
+<div class="credits-blank"></div>
+</div>
+<div class="license">
+<div class="title"><span class="title">الترخيص</span></div>
+<div class="contents"><p class="p">المشاع الإبداعي - المشاركة بالمثل 3.0 (Creative Commons Share Alike 3.0)</p></div>
+</div>
+</div></div>
+</div>
+</div></div></footer>
+</div></main></body>
+</html>

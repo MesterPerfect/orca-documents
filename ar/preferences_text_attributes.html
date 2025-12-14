@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>تفضيلات سمات النص</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="highlight.pack.js"></script><script>
+document.addEventListener('DOMContentLoaded', function() {
+  var matches = document.querySelectorAll('code.syntax')
+  for (var i = 0; i < matches.length; i++) {
+    hljs.highlightBlock(matches[i]);
+  }
+}, false);</script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><main><div class="page">
+<header><div class="inner pagewide"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Orca Screen Reader">قارئ الشاشة <span class="app">أوركا</span></a> › <a class="trail" href="index.html#quick_reference" title="Quick Reference">مرجع سريع</a> » <a class="trail" href="preferences.html" title="Orca's Preferences Dialogs">التفضيلات</a> › <a class="trail" href="preferences.html#orca" title="Orca Preferences">تفضيلات أوركا</a> » </div></div></div></header><article><nav class="prevnext pagewide"><div class="inner">
+<a href="preferences_pronunciation.html" title="Pronunciation Preferences">السابق</a><a href="preferences_web.html" title="Web Navigation Preferences">التالي</a>
+</div></nav><div class="hgroup pagewide"><h1 class="title"><span class="title">تفضيلات سمات النص</span></h1></div>
+<div class="region">
+<div class="contents pagewide"><p class="p">
+    يشير مصطلح "سمات النص" إلى جميع الخطوط، والأنماط، والمحاذاة، والتنسيقات الأخرى المرتبطة بحرف معين أو سلسلة من الأحرف. تسمح لك صفحة <span class="gui">سمات النص (Text Attributes)</span> في <span class="app">أوركا</span> بتخصيص سمات النص التي سيقدمها <span class="app">أوركا</span> في الكلام، بالإضافة إلى الترتيب الذي يجب تقديمها به، والسمات التي سيشير إليها <span class="app">أوركا</span> في طريقة برايل.
+  </p></div>
+<section id="table"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">جدول سمات النص</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      جدول سمات النص هو المكان الذي تحدد فيه السمات التي سيتم تقديمها والتي لن يتم تقديمها وتحت أي ظروف. يتكون كل صف من أربعة أعمدة.
+    </p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p">
+          <span class="gui">اسم السمة (Attribute Name)</span>: اسم سمة النص.
+        </p></li>
+<li class="list"><p class="p">
+          <span class="gui">نطق (Speak)</span>: حدد مربع الاختيار هذا إذا كنت ترغب في أن ينطق <span class="app">أوركا</span> هذه السمة عند الضغط على <span class="keyseq"><span class="key"><kbd>مفتاح أوركا المعدِّل</kbd></span>+<span class="key"><kbd>F</kbd></span></span>.
+        </p></li>
+<li class="list"><p class="p">
+          <span class="gui">تحديد في برايل (Mark in braille)</span>: حدد مربع الاختيار هذا إذا كنت ترغب في أن يقوم <span class="app">أوركا</span> بـ "تسطير" هذه السمة على شاشة برايل الخاصة بك.
+        </p></li>
+<li class="list">
+<p class="p">
+          <span class="gui">التقديم إلا إذا (Present Unless)</span>: يسمح لك هذا الحقل القابل للتحرير بتحديد متى تكون السمة المفعلة غير ذات أهمية.
+        </p>
+<p class="p">
+          على سبيل المثال، افتراضيًا، سمة النص "تسطير" (underline) لها قيمة "لا شيء" (none). هذا يجعل <span class="app">أوركا</span> يخبرك عن النص المسطر طالما أن النص مسطر بالفعل. إذا كنت تريد دائمًا نطق هذه السمة بغض النظر عما إذا كان النص مسطرًا أم لا، فيجب أن يكون عمود <span class="gui">التقديم إلا إذا</span> فارغًا للتسطير. بالإضافة إلى ذلك، يجب التأكد من تحديد عمود <span class="gui">نطق</span> للتسطير.
+        </p>
+</li>
+</ul></div></div></div>
+</div></div>
+</div></section><section id="reset"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">التراجع عن التغييرات</span></h2></div>
+<div class="region"><div class="contents pagewide"><p class="p">
+       أسفل قائمة سمات النص، يوجد زر <span class="gui">إعادة تعيين (Reset)</span> (<span class="keyseq"><span class="key"><kbd>Alt</kbd></span>+<span class="key"><kbd>R</kbd></span></span>) والذي سيعيد قيم الجدول إلى ما كانت عليه عند عرض مربع الحوار لأول مرة.
+    </p></div></div>
+</div></section><section id="rearranging"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">إعادة ترتيب العرض</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        عندما تعرض صفحة <span class="gui">سمات النص</span> لأول مرة، يتم وضع جميع السمات المفعلة في أعلى الجدول بالترتيب الذي سيتم نطقها به. هناك أربعة أزرار يمكن استخدامها لإعادة ترتيب العرض.
+    </p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p">
+          <span class="gui">نقل للأعلى (Move to top)</span> (<span class="keyseq"><span class="key"><kbd>Alt</kbd></span>+<span class="key"><kbd>T</kbd></span></span>):
+          ينقل السمة المحددة إلى أعلى القائمة.
+        </p></li>
+<li class="list"><p class="p">
+          <span class="gui">تحريك لأعلى (Move up)</span> (<span class="keyseq"><span class="key"><kbd>Alt</kbd></span>+<span class="key"><kbd>U</kbd></span></span>):
+          ينقل السمة المحددة صفًا واحدًا لأعلى.
+        </p></li>
+<li class="list"><p class="p">
+          <span class="gui">تحريك لأسفل (Move down)</span> (<span class="keyseq"><span class="key"><kbd>Alt</kbd></span>+<span class="key"><kbd>D</kbd></span></span>):
+          ينقل السمة المحددة صفًا واحدًا لأسفل.
+        </p></li>
+<li class="list"><p class="p">
+          <span class="gui">نقل للأسفل (Move to bottom)</span> (<span class="keyseq"><span class="key"><kbd>Alt</kbd></span>+<span class="key"><kbd>B</kbd></span></span>):
+          ينقل السمة المحددة إلى أسفل القائمة.
+        </p></li>
+</ul></div></div></div>
+</div></div>
+</div></section><section id="braille_indicator"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">خيارات لتهيئة "تسطير" برايل للتنسيق</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        أسفل الأزرار الانضغاطية توجد مجموعة أزرار الاختيار <span class="gui">مؤشر برايل (Braille Indicator)</span>. هنا يمكنك تحديد الخلية أو الخلايا التي سيتم استخدامها للإشارة إلى النص الذي يحتوي على واحدة على الأقل من السمات المحددة.
+    </p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p"><span class="gui">لا شيء (None)</span>: عدم تسطير سمات النص في برايل (الافتراضي)</p></li>
+<li class="list"><p class="p"><span class="gui">نقطة 7 (Dot 7)</span>: تسطير سمات النص بالنقطة 7 فقط</p></li>
+<li class="list"><p class="p"><span class="gui">نقطة 8 (Dot 8)</span>: تسطير سمات النص بالنقطة 8 فقط</p></li>
+<li class="list"><p class="p"><span class="gui">النقاط 7 و 8 (Dots 7 and 8)</span>: تسطير سمات النص بكل من النقطتين 7 و 8</p></li>
+</ul></div></div></div>
+</div></div>
+</div></section><nav class="prevnext pagewide"><div class="inner">
+<a href="preferences_pronunciation.html" title="Pronunciation Preferences">السابق</a><a href="preferences_web.html" title="Web Navigation Preferences">التالي</a>
+</div></nav><section class="links" role="navigation"><div class="inner">
+<div class="hgroup pagewide"></div>
+<div class="contents pagewide">
+<div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">مزيد من المعلومات</span></h2></div>
+<div class="region"><ul><li class="links "><a href="preferences.html#orca" title="Orca Preferences">تفضيلات أوركا</a></li></ul></div>
+</div></div>
+<div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">انظر أيضًا</span></h2></div>
+<div class="region"><ul><li class="links ">
+<a href="howto_text_attributes.html" title="Text Attributes">سمات النص</a><span class="desc"> — 
+      فحص تنسيق النص
+    </span>
+</li></ul></div>
+</div></div>
+</div>
+</div></section>
+</div>
+<div class="clear"></div></article><footer><div class="inner pagewide"><div class="about ui-expander" role="contentinfo">
+<div class="yelp-data yelp-data-ui-expander" data-yelp-expanded="false"></div>
+<div class="inner">
+<div class="hgroup"><h2><span class="title">حول</span></h2></div>
+<div class="region"><div class="contents">
+<div class="credits">
+<div class="credits-authors">
+<div class="title"><span class="title">كتب بواسطة</span></div>
+<ul class="credits"><li>Joanmarie Diggs</li></ul>
+</div>
+<div class="credits-blank"></div>
+<div class="credits-blank"></div>
+</div>
+<div class="license">
+<div class="title"><span class="title">الترخيص</span></div>
+<div class="contents"><p class="p">المشاع الإبداعي - المشاركة بالمثل 3.0 (Creative Commons Share Alike 3.0)</p></div>
+</div>
+</div></div>
+</div>
+</div></div></footer>
+</div></main></body>
+</html>

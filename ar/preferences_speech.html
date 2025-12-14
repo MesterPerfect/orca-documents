@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>تفضيلات الكلام</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="highlight.pack.js"></script><script>
+document.addEventListener('DOMContentLoaded', function() {
+  var matches = document.querySelectorAll('code.syntax')
+  for (var i = 0; i < matches.length; i++) {
+    hljs.highlightBlock(matches[i]);
+  }
+}, false);</script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><main><div class="page">
+<header><div class="inner pagewide"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Orca Screen Reader">قارئ الشاشة <span class="app">أوركا</span></a> › <a class="trail" href="index.html#quick_reference" title="Quick Reference">مرجع سريع</a> » <a class="trail" href="preferences.html" title="Orca's Preferences Dialogs">التفضيلات</a> › <a class="trail" href="preferences.html#orca" title="Orca Preferences">تفضيلات أوركا</a> » </div></div></div></header><article><nav class="prevnext pagewide"><div class="inner">
+<a href="preferences_voice.html" title="Voice Preferences">السابق</a><a href="preferences_braille.html" title="Braille Preferences">التالي</a>
+</div></nav><div class="hgroup pagewide"><h1 class="title"><span class="title">تفضيلات الكلام</span></h1></div>
+<div class="region">
+<div class="contents pagewide"></div>
+<section id="enable_speech"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">تفعيل الكلام</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      يتحكم مربع الاختيار <span class="gui">تفعيل الكلام (Enable speech)</span> فيما إذا كان <span class="app">أوركا</span> سيستفيد من مركب الكلام أم لا. قد يرغب مستخدمو برايل فقط في إلغاء تحديد هذا المربع.
+    </p>
+<p class="p">
+      القيمة الافتراضية: محدد
+    </p>
+</div></div>
+</div></section><section id="verbosity"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">الإسهاب (Verbosity)</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      يحدد إعداد <span class="gui">الإسهاب (Verbosity)</span> مقدار المعلومات التي سيتم نطقها في مواقف مختلفة. على سبيل المثال، إذا تم ضبطه على مسهب (verbose)، وانتقلت بالأسهم إلى كلمة بها خطأ إملائي، سيعلن <span class="app">أوركا</span> أن الكلمة بها خطأ إملائي. عندما يتم ضبط المستوى على موجز (brief)، لن يتم هذا الإعلان.
+    </p>
+<p class="p">
+      القيمة الافتراضية: <span class="gui">مسهب (Verbose)</span>
+    </p>
+</div></div>
+</div></section><section id="punctuation_level"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">مستوى علامات الترقيم</span></h2></div>
+<div class="region">
+<div class="contents pagewide">
+<p class="p">
+      تُستخدم مجموعة أزرار الاختيار <span class="gui">مستوى علامات الترقيم (Punctuation Level)</span> لضبط كمية علامات الترقيم التي ينطقها المركب. المستويات المتاحة هي <span class="gui">لا شيء (None)</span>، <span class="gui">البعض (Some)</span>، <span class="gui">معظم (Most)</span>، و <span class="gui">الكل (All)</span>.
+    </p>
+<p class="p">
+      القيمة الافتراضية: <span class="gui">معظم (Most)</span>
+    </p>
+</div>
+<section id="punctuation_level_none"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">لا شيء (None)</span></h3></div>
+<div class="region"><div class="contents pagewide"><p class="p">
+        اختيار مستوى علامات الترقيم <span class="gui">لا شيء</span> سيؤدي، كما تتوقع، إلى عدم نطق أي علامات ترقيم. لاحظ، مع ذلك، أن الرموز الخاصة مثل الأرقام السفلية والعلوية، وكسور Unicode، والنقاط النقطية (bullets) لا تزال تُنطق في هذا المستوى، على الرغم من أن البعض قد يعتبر هذه الأنواع من الرموز علامات ترقيم.
+      </p></div></div>
+</div></section><section id="punctuation_level_some"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">البعض (Some)</span></h3></div>
+<div class="region"><div class="contents pagewide"><p class="p">
+        اختيار مستوى علامات الترقيم <span class="gui">البعض</span> يؤدي إلى نطق جميع الرموز المذكورة سابقًا. بالإضافة إلى ذلك، سينطق <span class="app">أوركا</span> الرموز الرياضية المعروفة، ورموز العملات، و "^"، "@"، "/"، "&amp;"، "#".
+      </p></div></div>
+</div></section><section id="punctuation_level_most"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">معظم (Most)</span></h3></div>
+<div class="region"><div class="contents pagewide"><p class="p">
+        اختيار مستوى علامات الترقيم <span class="gui">معظم</span> يؤدي إلى نطق جميع الرموز المذكورة سابقًا. بالإضافة إلى ذلك، سينطق <span class="app">أوركا</span> جميع علامات الترقيم المعروفة الأخرى <span class="em">باستثناء</span> "!"، "'" (الفاصلة العليا)، "," (الفاصلة)، "." (النقطة)، "؟" (علامة الاستفهام).
+      </p></div></div>
+</div></section><section id="punctuation_level_all"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">الكل (All)</span></h3></div>
+<div class="region"><div class="contents pagewide"><p class="p">
+        اختيار مستوى علامات الترقيم <span class="gui">الكل</span>، كما هو متوقع، يؤدي إلى نطق <span class="app">أوركا</span> لجميع علامات الترقيم المعروفة.
+      </p></div></div>
+</div></section>
+</div>
+</div></section><section id="spoken_context"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">السياق المنطوق</span></h2></div>
+<div class="region">
+<div class="contents pagewide"><p class="p">
+      تتحكم العناصر التالية في تقديم مجموعة متنوعة من المعلومات الإضافية، "معلومات النظام"، حول العنصر الذي عليه التركيز. نظرًا لأن النص المرتبط لا يظهر على الشاشة، يتم تقديم هذه المعلومات بصوت النظام في <span class="app">أوركا</span>.
+    </p></div>
+<section id="only_speak_displayed_text"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">نطق النص المعروض فقط</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        تحديد مربع الاختيار هذا يجعل <span class="app">أوركا</span> ينطق فقط النص الفعلي المعروض على الشاشة. هذا الخيار مخصص بشكل أساسي للمستخدمين ضعاف البصر والمستخدمين ذوي صعوبات التعلم البصرية.
+      </p>
+<p class="p">
+        القيمة الافتراضية: غير محدد
+      </p>
+<div class="note" title="Note">
+<svg height="24" width="24" version="1.1">
+ <g>
+  <path class="yelp-svg-fill" d="m4 3h16c0.554 0 1 0.446 1 1v11h-6v6h-11c-0.554 0-1-0.446-1-1v-16c0-0.554 0.446-1 1-1z"></path>
+  <path class="yelp-svg-fill" d="m17 16h4l-5 5v-4c0-0.554 0.446-1 1-1z"></path>
+ </g>
+</svg><div class="inner"><div class="region"><div class="contents"><p class="p">
+          لن تكون العناصر التالية متاحة للتهيئة إذا تم تحديد مربع الاختيار <span class="gui">نطق النص المعروض فقط</span>.
+        </p></div></div></div>
+</div>
+</div></div>
+</div></section><section id="speak_blank_lines"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">نطق الأسطر الفارغة</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد مربع الاختيار <span class="gui">نطق الأسطر الفارغة</span>، سيقول <span class="app">أوركا</span> "فارغ" في كل مرة تنتقل فيها بالأسهم إلى سطر فارغ. إذا لم يتم تحديده، فلن يقول <span class="app">أوركا</span> شيئًا عند الانتقال إلى سطر فارغ.
+      </p>
+<p class="p">
+        القيمة الافتراضية: محدد
+      </p>
+</div></div>
+</div></section><section id="indentation_and_justification"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">نطق الإزاحة والمحاذاة</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        عند العمل مع التعليمات البرمجية أو تحرير مستندات أخرى، غالبًا ما يكون من المرغوب فيه معرفة المحاذاة والإزاحة. سيؤدي تحديد مربع الاختيار <span class="gui">نطق الإزاحة والمحاذاة</span> إلى جعل <span class="app">أوركا</span> يعلن عن هذه المعلومات.
+      </p>
+<p class="p">
+        القيمة الافتراضية: غير محدد
+      </p>
+</div></div>
+</div></section><section id="speak_misspelled_word_indicator"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">نطق مؤشر الكلمات التي بها أخطاء إملائية</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        مؤشر الكلمات التي بها أخطاء إملائية هو الخط الأحمر المتعرج الذي يظهر أسفل الكلمات التي بها أخطاء إملائية في حقول النص القابلة للتحرير. إذا تم تحديد <span class="gui">نطق مؤشر الكلمات التي بها أخطاء إملائية</span>، فعندما تنتقل إلى كلمة تحمل هذا المؤشر، أو تكتب كلمة بشكل غير صحيح مما يؤدي إلى ظهور هذا المؤشر، سيقول <span class="app">أوركا</span> "بها خطأ إملائي".
+      </p>
+<p class="p">
+        القيمة الافتراضية: محدد
+      </p>
+</div></div>
+</div></section><section id="mnemonics"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">نطق اختصارات الكائنات (mnemonics)</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد مربع الاختيار <span class="gui">نطق اختصارات الكائنات</span>، سيعلن <span class="app">أوركا</span> عن الاختصار (mnemonic) المرتبط بالكائن الذي عليه التركيز (مثل <span class="keyseq"><span class="key"><kbd>Alt</kbd></span>+<span class="key"><kbd>O</kbd></span></span> لزر <span class="gui">موافق</span>).
+      </p>
+<p class="p">
+        القيمة الافتراضية: غير محدد
+      </p>
+</div></div>
+</div></section><section id="child_position"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">نطق موضع الطفل</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        سيؤدي تحديد مربع الاختيار <span class="gui">نطق موضع الطفل</span> إلى جعل <span class="app">أوركا</span> يعلن عن موضع العنصر الذي عليه التركيز في القوائم، والقوائم المنسدلة، والأشجار (مثل "9 من 16").
+      </p>
+<p class="p">
+        القيمة الافتراضية: غير محدد
+      </p>
+</div></div>
+</div></section><section id="speak_tutorial_messages"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">نطق الرسائل التعليمية</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد مربع الاختيار <span class="gui">نطق الرسائل التعليمية</span>، فبينما تتحرك بين الكائنات في واجهة المستخدم، سيقدم <span class="app">أوركا</span> معلومات إضافية، مثل كيفية التفاعل مع الكائن الذي عليه التركيز حاليًا.
+      </p>
+<p class="p">
+        القيمة الافتراضية: غير محدد
+      </p>
+</div></div>
+</div></section><section id="speak_description"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">نطق الوصف</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد مربع الاختيار <span class="gui">نطق الوصف</span>، فبينما تتحرك بين الكائنات في واجهة المستخدم، سينطق <span class="app">أوركا</span> الوصف الذي يمكن الوصول إليه بالإضافة إلى الاسم الذي يمكن الوصول إليه للكائن.
+      </p>
+<p class="p">
+        القيمة الافتراضية: محدد
+      </p>
+</div></div>
+</div></section><section id="system_messages_are_detailed"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">رسائل النظام مفصلة</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد <span class="gui">رسائل النظام مفصلة</span>، سيقدم <span class="app">أوركا</span> رسائل مفصلة لك صوتيًا. على سبيل المثال، إذا استخدمت أمر <span class="app">أوركا</span> لتغيير الصدى، قد يقول <span class="app">أوركا</span> "تم تعيين الصدى إلى كلمة". إذا كنت تفضل رسائل أقصر، مثل "كلمة" ببساطة، يجب عليك إلغاء تحديد هذا المربع.
+      </p>
+<p class="p">
+        القيمة الافتراضية: محدد
+      </p>
+</div></div>
+</div></section><section id="speak_colors_as_names"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">نطق الألوان كأسماء</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد <span class="gui">نطق الألوان كأسماء</span>، سيصف <span class="app">أوركا</span> الألوان، باحثًا عن أقرب تقريب. على سبيل المثال، سيتم نطق RGB 0, 27, 51 كـ "أزرق منتصف الليل" (midnight blue). إذا كنت تفضل سماع قيمة RGB الدقيقة، يجب عليك إلغاء تحديد هذا المربع.
+      </p>
+<p class="p">
+        القيمة الافتراضية: محدد
+      </p>
+</div></div>
+</div></section><section id="announce_blockquotes_during_navigation"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">الإعلان عن الاقتباسات أثناء التنقل</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد <span class="gui">الإعلان عن الاقتباسات أثناء التنقل</span>، سيخبرك <span class="app">أوركا</span> عندما تنتقل إلى داخل أو خارج اقتباس. لاحظ أن هذا الإعداد مستقل عما إذا كان هذا الإعلان يتم أثناء "نطق الكل". انظر <span class="link"><a href="preferences_general.html#say_all_announce_context" title="Announce Contextual Information in Say All">الإعلان عن المعلومات السياقية في نطق الكل</a></span> لمزيد من المعلومات.
+      </p>
+<p class="p">
+        القيمة الافتراضية: محدد
+      </p>
+</div></div>
+</div></section><section id="announce_forms_during_navigation"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">الإعلان عن النماذج أثناء التنقل</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد <span class="gui">الإعلان عن النماذج أثناء التنقل</span>، سيخبرك <span class="app">أوركا</span> عندما تنتقل إلى داخل أو خارج نموذج. لاحظ أن هذا الإعداد خاص بالنماذج التي ليست معالم ARIA. يمكنك تهيئة عرض معالم ARIA من خلال مربع الاختيار <span class="gui">الإعلان عن المعالم أثناء التنقل</span>. بالإضافة إلى ذلك، لاحظ أن هذا الإعداد مستقل عما إذا كان هذا الإعلان يتم أثناء "نطق الكل". انظر <span class="link"><a href="preferences_general.html#say_all_announce_context" title="Announce Contextual Information in Say All">الإعلان عن المعلومات السياقية في نطق الكل</a></span> لمزيد من المعلومات.
+      </p>
+<p class="p">
+        القيمة الافتراضية: محدد
+      </p>
+</div></div>
+</div></section><section id="announce_landmarks_during_navigation"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">الإعلان عن المعالم أثناء التنقل</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد <span class="gui">الإعلان عن المعالم أثناء التنقل</span>، سيخبرك <span class="app">أوركا</span> عندما تنتقل إلى داخل أو خارج معلم ARIA. لاحظ أن هذا الإعداد مستقل عما إذا كان هذا الإعلان يتم أثناء "نطق الكل". انظر <span class="link"><a href="preferences_general.html#say_all_announce_context" title="Announce Contextual Information in Say All">الإعلان عن المعلومات السياقية في نطق الكل</a></span> لمزيد من المعلومات.
+      </p>
+<p class="p">
+        القيمة الافتراضية: محدد
+      </p>
+</div></div>
+</div></section><section id="announce_lists_during_navigation"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">الإعلان عن القوائم أثناء التنقل</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد <span class="gui">الإعلان عن القوائم أثناء التنقل</span>، سيخبرك <span class="app">أوركا</span> عندما تنتقل إلى داخل أو خارج قائمة. لاحظ أن هذا الإعداد مستقل عما إذا كان هذا الإعلان يتم أثناء "نطق الكل". انظر <span class="link"><a href="preferences_general.html#say_all_announce_context" title="Announce Contextual Information in Say All">الإعلان عن المعلومات السياقية في نطق الكل</a></span> لمزيد من المعلومات.
+      </p>
+<p class="p">
+        القيمة الافتراضية: محدد
+      </p>
+</div></div>
+</div></section><section id="announce_panels_during_navigation"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">الإعلان عن اللوحات أثناء التنقل</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد <span class="gui">الإعلان عن اللوحات أثناء التنقل</span>، سيخبرك <span class="app">أوركا</span> عندما تنتقل إلى داخل أو خارج لوحة. لاحظ أن هذا الإعداد مستقل عما إذا كان هذا الإعلان يتم أثناء "نطق الكل". انظر <span class="link"><a href="preferences_general.html#say_all_announce_context" title="Announce Contextual Information in Say All">الإعلان عن المعلومات السياقية في نطق الكل</a></span> لمزيد من المعلومات.
+      </p>
+<p class="p">
+        القيمة الافتراضية: محدد
+      </p>
+</div></div>
+</div></section><section id="announce_tables_during_navigation"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">الإعلان عن الجداول أثناء التنقل</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد <span class="gui">الإعلان عن الجداول أثناء التنقل</span>، سيخبرك <span class="app">أوركا</span> عندما تنتقل إلى داخل أو خارج جدول. لاحظ أن هذا الإعداد مستقل عما إذا كان هذا الإعلان يتم أثناء "نطق الكل". انظر <span class="link"><a href="preferences_general.html#say_all_announce_context" title="Announce Contextual Information in Say All">الإعلان عن المعلومات السياقية في نطق الكل</a></span> لمزيد من المعلومات.
+      </p>
+<p class="p">
+        القيمة الافتراضية: محدد
+      </p>
+</div></div>
+</div></section><section id="speak_full_row_in_gui_tables"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">نطق الصف بالكامل في جداول واجهة المستخدم الرسومية (GUI)</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد <span class="gui">نطق الصف بالكامل في جداول GUI</span>، أثناء تنقلك لأعلى ولأسفل في جداول التطبيقات مثل قائمة الرسائل في صندوق الوارد، سينطق <span class="app">أوركا</span> الصف بالكامل. إذا كنت تفضل سماع الخلية التي عليها التركيز فقط، يجب عليك إلغاء تحديد هذا المربع.
+      </p>
+<p class="p">
+        القيمة الافتراضية: محدد
+      </p>
+</div></div>
+</div></section><section id="speak_full_row_in_document_tables"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">نطق الصف بالكامل في جداول المستندات</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد <span class="gui">نطق الصف بالكامل في جداول المستندات</span>، أثناء تنقلك لأعلى ولأسفل في الجداول مثل تلك الموجودة في مستندات <span class="app">Writer</span> والويب، سينطق <span class="app">أوركا</span> الصف بالكامل. إذا كنت تفضل سماع الخلية التي عليها التركيز فقط، يجب عليك إلغاء تحديد هذا المربع.
+      </p>
+<p class="p">
+        القيمة الافتراضية: محدد
+      </p>
+</div></div>
+</div></section><section id="speak_full_row_in_spreadsheets"><div class="inner">
+<div class="hgroup pagewide"><h3 class="title"><span class="title">نطق الصف بالكامل في جداول البيانات (Spreadsheets)</span></h3></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+        إذا تم تحديد <span class="gui">نطق الصف بالكامل في جداول البيانات</span>، أثناء تنقلك لأعلى ولأسفل في جداول البيانات، سينطق <span class="app">أوركا</span> الصف بالكامل. إذا كنت تفضل سماع الخلية التي عليها التركيز فقط، يجب عليك إلغاء تحديد هذا المربع.
+      </p>
+<p class="p">
+        القيمة الافتراضية: غير محدد
+      </p>
+</div></div>
+</div></section>
+</div>
+</div></section><nav class="prevnext pagewide"><div class="inner">
+<a href="preferences_voice.html" title="Voice Preferences">السابق</a><a href="preferences_braille.html" title="Braille Preferences">التالي</a>
+</div></nav><section class="links" role="navigation"><div class="inner">
+<div class="hgroup pagewide"></div>
+<div class="contents pagewide">
+<div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">مزيد من المعلومات</span></h2></div>
+<div class="region"><ul><li class="links "><a href="preferences.html#orca" title="Orca Preferences">تفضيلات أوركا</a></li></ul></div>
+</div></div>
+<div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">انظر أيضًا</span></h2></div>
+<div class="region"><ul><li class="links ">
+<a href="commands_speech_settings.html" title="Speech Settings Commands">الكلام</a><span class="desc"> — 
+      أوامر لتخصيص مخرجات <span class="app">أوركا</span>
+    </span>
+</li></ul></div>
+</div></div>
+</div>
+</div></section>
+</div>
+<div class="clear"></div></article><footer><div class="inner pagewide"><div class="about ui-expander" role="contentinfo">
+<div class="yelp-data yelp-data-ui-expander" data-yelp-expanded="false"></div>
+<div class="inner">
+<div class="hgroup"><h2><span class="title">حول</span></h2></div>
+<div class="region"><div class="contents">
+<div class="credits">
+<div class="credits-authors">
+<div class="title"><span class="title">كتب بواسطة</span></div>
+<ul class="credits"><li>Joanmarie Diggs</li></ul>
+</div>
+<div class="credits-blank"></div>
+<div class="credits-blank"></div>
+</div>
+<div class="license">
+<div class="title"><span class="title">الترخيص</span></div>
+<div class="contents"><p class="p">المشاع الإبداعي - المشاركة بالمثل 3.0 (Creative Commons Share Alike 3.0)</p></div>
+</div>
+</div></div>
+</div>
+</div></div></footer>
+</div></main></body>
+</html>
